@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Filter on Product List</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+  }
+  #search{
+    width: 100%;
+    padding: 0.5em 1em ;
+  }
+  .search-tab{
+    display: flex;
+    gap: 0.5em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .search-tab button{
+    padding: 0.5em 1em ;
+    height: 100%;
+  }
+ .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.card {
+  height: fit-content;
+  padding: 8px;
+  border: 2px solid rgba(226, 43, 92, 0.434); 
+  border-radius: 0.5em;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 1.3em;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5em;
+}
+</style>
+<body>
+  <main>
+    <div class="search-tab">
+      <input type="text" name="search" placeholder="search as per name or category" id="search" style="display: block; margin-bottom: 10px;">
+      <button>Search</button>
+    </div>
+    <div class="products">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .tasks{
+    display: flex;
+    gap: 10;
+    justify-content: center;
+    margin-top: 1em;
+  }
+</style>
+<body>
+  <main>
+    <div style="margin: 0 auto; width: fit-content;">
+      <input type="text" name="task" id="task">
+      <input type="date" name="date" id="date">
+      <select name="option" id="options">
+        <option value="select the status" aria-disabled="true">Select the status</option>
+        <option value="Completed">completed</option>
+        <option value="incompleted">in complete</option>
+        <option value="pending">pending</option>
+      </select>
+      <button class="btn">Add Task</button>
+    </div>
+    <div class="tasks">
+      <ul class="past" style="border-right: 1px solid black; padding-right: 3em;">
+        <li style="list-style: none;"><b>Past</b></li>
+      </ul>
+      <ul class="upcoming" style="border-right: 1px solid black; padding-right: 3em;">
+        <li style="list-style: none; "><b>Up Coming</b></li>
+      </ul>
+      <ul class="all">
+        <li style="list-style: none;"><b>All</b></li>
+      </ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
