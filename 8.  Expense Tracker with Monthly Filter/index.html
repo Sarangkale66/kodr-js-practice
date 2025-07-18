@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main class="h-screen w-full flex flex-col  items-center bg-gray-100">
+    <form id="form" class="flex md:flex-row flex-col h-fit w-fit justify-center items-center gap-2 max-w-md p-4  rounded-md">
+      <input type="text" name="name" id="name" class="border border-gray-300 rounded-md p-2" placeholder="Expense Name">
+      <input type="text" name="amount" id="amount" class="border border-gray-300 rounded-md p-2" placeholder="Amount">
+      <input type="date" name="date" id="date" class="border border-gray-300 rounded-md p-2 w-full" placeholder="MM-DD">
+      <button class="bg-blue-500 text-white rounded-md p-2 w-full md:min-w-[150px] md:max-w-[150px]"><p class="text-md font-semibold">Add expenses</p></button>
+    </form>
+    <select id="month-filter" class="border border-gray-300 rounded-md p-2">
+      <option value="all">All</option>
+      <option value="january">January</option>
+      <option value="february">February</option>
+      <option value="march">March</option>
+      <option value="april">April</option>
+      <option value="may">May</option>
+      <option value="june">June</option>
+      <option value="july">July</option>
+      <option value="august">August</option>
+      <option value="september">September</option>
+      <option value="october">October</option>
+      <option value="november">November</option>
+      <option value="december">December</option>
+    </select>
+    <div class="filtered-expensed py-4">
+      <table class="min-w-full border-collapse border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2">Expense Name</th>
+            <th class="border border-gray-300 p-2">Amount</th>
+            <th class="border border-gray-300 p-2">Date</th>
+          </tr>
+        </thead>
+        <tbody id="expense-list">
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

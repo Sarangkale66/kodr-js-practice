@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main class="flex items-center justify-center min-h-screen w-full bg-gray-100">
+     <select id="sort-filter" class="border border-gray-300 rounded-md p-2">
+      <option value="name">Name</option>
+      <option value="age">Age</option>
+      <option value="marks">Marks</option>
+    </select>
+    <table class="min-w-full border-collapse border border-gray-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2">Student Name</th>
+            <th class="border border-gray-300 p-2">Age</th>
+            <th class="border border-gray-300 p-2">Marks</th>
+          </tr>
+        </thead>
+        <tbody id="student-list">
+        </tbody>
+      </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
