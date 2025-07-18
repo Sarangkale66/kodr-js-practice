@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Timer (Countdown UI)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full flex items-center justify-center">
+    <main class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm text-center space-y-6">
+      <h1 class="text-xl font-semibold text-gray-800">Enter OTP</h1>
+
+      <textarea
+        id="otp"
+        name="otp"
+        rows="1"
+        maxlength="6"
+        placeholder="Enter 6-digit code"
+        class="w-full text-center text-2xl tracking-widest p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+      ></textarea>
+
+      <button
+        id="btn"
+        class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Send OTP
+      </button>
+
+      <div id="timer" class="hidden text-gray-600 text-sm">
+        <span >You can re-send OTP after </span>
+        <span class="font-semibold">00</span>:<span id="counter" class="font-semibold">30</span>
+      </div>
+    </main>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>

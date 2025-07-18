@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5. Comment System with Replies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full">
+    <main class="max-w-3xl mx-auto mt-10 px-4">
+      <div class="flex gap-4 items-start">
+        <textarea
+          id="comment"
+          name="comment"
+          rows="4"
+          placeholder="Write a comment..."
+          class="w-full p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+        ></textarea>
+        <button
+          id="btn"
+          class="h-fit px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+        >
+          Comment
+        </button>
+      </div>
+      <div class="add-comment mt-6 space-y-4">
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

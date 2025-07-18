@@ -27,7 +27,7 @@ searchInput.addEventListener("input",(e)=>{
 
   prev = setTimeout(()=>{
     let txt = e.target.value;
-    let newArr = products.filter((value)=>value.category.toLowerCase().includes(txt) || value.name.toLowerCase().includes(txt));
+    let newArr = products.filter((value)=>value.category.toLowerCase().includes(txt.toLowerCase()) || value.name.toLowerCase().includes(txt.toLowerCase()));
     productDiv.innerHTML=null;
     render(newArr);
   },300);
