@@ -29,7 +29,7 @@ tasks.forEach(elem => {
 
 function CreateLiAndInsert(div){
   const li = document.createElement("li");
-  li.textContent = `${taskValue} : ${dateValue} : ${statusValue}`;
+  li.innerHTML = `<span class="font-bold">• </span><span class="font-semibold">${taskValue}</span> : ${dateValue} : ${statusValue}`;
   div.append(li);
 }
 
@@ -57,5 +57,5 @@ btn.addEventListener("click",()=>{
 });
 
 window.addEventListener("beforeunload",()=>{
-  localStorage.setItem("tasks",JSON.stringify(tasks))
+  localStorage.setItem("tasks",JSON.stringify(tasks));
 });

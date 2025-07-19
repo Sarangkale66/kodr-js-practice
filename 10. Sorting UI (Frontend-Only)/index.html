@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script  src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <main class="flex items-center justify-center min-h-screen w-full bg-gray-100">
-     <select id="sort-filter" class="border border-gray-300 rounded-md p-2">
+  <main class="flex flex-col items-center justify-start min-h-screen py-10  bg-gray-100">
+     <select id="sort-filter" class="border border-gray-300 rounded-md p-2 my-2">
       <option value="name">Name</option>
       <option value="age">Age</option>
       <option value="marks">Marks</option>
     </select>
-    <table class="min-w-full border-collapse border border-gray-300">
+    <table class="min-w-[75%] border-collapse border border-gray-300 mx-5">
         <thead>
           <tr>
             <th class="border border-gray-300 p-2">Student Name</th>
